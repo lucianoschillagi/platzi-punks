@@ -8,7 +8,8 @@ const connector = new InjectedConnector({
 });
 
 const getLibrary = (provider) => {
-  return new Web3(provider); // web3.js lib instance
+  // devuelve una nueva instancia de web3 con el provedor (metamask en este caso)
+  return new Web3(provider);
 };
 
 export { connector, getLibrary };

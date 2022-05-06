@@ -29,7 +29,7 @@ contract PlatziPunks is ERC721, ERC721Enumerable, PlatziPunksDNA {
         _safeMint(msg.sender, current);
         _idCounter.increment();
     }
-
+ 
     function _baseURI() internal pure override returns (string memory) {
         return "https://avataaars.io/";
     }

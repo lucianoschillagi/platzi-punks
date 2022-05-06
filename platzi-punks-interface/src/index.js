@@ -11,7 +11,7 @@ ReactDOM.render(
     <HashRouter>
       <ChakraProvider>
         {/* con 'getLibrary' obtenemos nuestra instancia de
-        la lib "Web3" */}
+        la lib "Web3" con Metamask */}
         <Web3ReactProvider getLibrary={getLibrary} >
           <App />
         </Web3ReactProvider>

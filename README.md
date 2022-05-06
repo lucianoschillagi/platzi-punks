@@ -1,2 +1,0 @@
-# Platzi-Punks
-# Platzi-Punks
