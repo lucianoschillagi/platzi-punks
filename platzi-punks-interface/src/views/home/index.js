@@ -14,17 +14,13 @@ import usePlatziPunks from "../../hooks/usePlatziPunks";
 import { useCallback, useEffect, useState } from "react";
 
 const Home = () => {
-  // State
   const [isMinting, setIsMinting] = useState(false);
   const [imageSrc, setImageSrc] = useState("");
-  // Hooks
   const { active, account } = useWeb3React();
   const platziPunks = usePlatziPunks();
   const toast = useToast();
 
   const getPlatziPunksData = useCallback(async () => {
-
-    // Valida si el contrato existe
     if (platziPunks) {
       const totalSupply = await platziPunks.methods.totalSupply().call();
       const dnaPreview = await platziPunks.methods
